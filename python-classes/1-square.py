@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""NO MODULES USED"""
+
+"""NO MODULES USED IN THIS CODE AS IT IS NOT ALLOWED"""
 
 
 class Square:
