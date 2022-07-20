@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""NO MODULES USED IN THIS CODE"""
+"""
+NO MODULE IN THIS CODE
+"""
 
 
 class Square:
