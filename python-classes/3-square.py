@@ -1,18 +1,20 @@
 #!/usr/bin/python3
-"""NO MODULES USED IN THIS CODE"""
+"""
+NO MODULE USED IN THIS CODE
+"""
 
 
 class Square:
-    """Class that defines the sizes of a square
-    and gives errors and exceptions"""
-
+    """
+    SQUARE CLASS
+    """
     def __init__(self, size=0):
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
-        self.square_size = size
+        else:
+            self._Square__size = size
 
- def area(self):
-        """Function to return the are of the square"""
-        return self.square_size ** 2
+    def area(self):
+        return self._Square__size**2

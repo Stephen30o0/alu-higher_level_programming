@@ -1,46 +1,68 @@
 #!/usr/bin/python3
-"""NO MODULES USED IN THIS CODE"""
+""" Module Sqaure """
 
 
 class Square:
-    """Class that defines the sizes of a square
-    and gives errors and exceptions
+    """ Square class defined by geometric shap
+        Attributes:
+            size (int): Size of square
     """
-
     def __init__(self, size=0):
-        if not isinstance(size, int):
-            raise TypeError("size must be an integer")
-        elif size < 0:
-            raise ValueError("size must be >= 0")
-        self.square_size = size
+        """initializes the square
+        Args:
+            size (int): size of a side of the square
+        Returns:
+            None
+        """
+        self.__size = size
 
     def area(self):
-        """Function to return the are of the square"""
-        return self.square_size ** 2
+        """
+        set square square area
+        Return:
+            the current square area (int)
+        """
+        return self.__size ** 2
 
     @property
     def size(self):
-        """gets the size of the square
-        and returns it."""
-        return self.square_size
+        """
+        getter of size
+        Return:
+            Size of square
+        """
+        return self.__size
 
-     @size.setter
+    @size.setter
     def size(self, value):
-        """sets the size of the value
-            raises Type and Value error if its not an interger
-            and is less than zeo repectively"""
-        if not isinstance(value, int):
+        """
+        Setter of size
+        Args:
+            size (int): size of a side of the square
+        Raises
+            TypeError: if size is not int
+            ValueError: size less than 0
+        Returns:
+            None
+        """
+        if type(value) is not int:
             raise TypeError("size must be an integer")
         elif value < 0:
-            raise ValueError("size must be >= 0")
-        self.__size = value
+                raise ValueError("size must be >= 0")
+        else:
+            self.__size = value
 
-     def my_print(self):
+    def my_print(self):
         if self.__size == 0:
             print()
         else:
-            for i in range(0, self.__size):
-                for j in range(0, self.__size):
+            counter = self.__size
+            startsize = self.__size
+            coun_num = 0
+            while self.__size > coun_num:
+                while counter > 0:
                     print("#", end="")
+                    counter -= 1
                 print()
-
+                counter = startsize
+                self.__size -= 1
