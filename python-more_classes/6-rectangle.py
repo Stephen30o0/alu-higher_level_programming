@@ -76,8 +76,8 @@ class Rectangle:
                 output += "\n"
                 counter += 1
         return output
-      
-       def __repr__(self):
+
+    def __repr__(self):
         return 'Rectangle({}, {})'.format(self.__width, self.__height)
 
     def __del__(self):
