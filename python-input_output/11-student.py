@@ -1,32 +1,42 @@
 #!/usr/bin/python3
-"""Module 11
-A class Student that defines a student by: (based on 10-student.py)
 """
-
-
-class Student():
-    """
-        A Student class that defines a Student
-    """
+Student class that defines a student by: (based on 10-student.py)
+"""
+class Student:
+    """creates a class Student"""
     def __init__(self, first_name, last_name, age):
-        """
-            INIT
+        """initialize instance attributes
+        Args:
+            first_name(str): first name
+            last_name(str): last name
+            age(int): age
         """
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
 
     def to_json(self, attrs=None):
+        """retrieves a dictionary representation of a Student instance
+        Args:
+            attrs(list): a list of attributes
+        Returns:
+            a dictionary representation of a Student instance
         """
-            retrieves a dictionary representation
-            of a Student instance
-        """
-        if type(attrs) is list and all([type(x) == str for x in attrs]):
-            return {k: v for k, v in self.__dict__.items() if k in attrs}
-        return(self.__dict__)
+        new = {}
+        i = 0
+        count = 0
+        if type(attrs) is list:
+            for key in attrs:
+                if key in self.__dict__:
+                    new[key] = self.__dict__[key]
+            return new
+        return self.__dict__
 
     def reload_from_json(self, json):
+        """replaces all attributes of the Student instance
+        Args:
+            json(dict): a dictionary
         """
-        """
-        for i, j in json.items():
-            self.__dict__[i] =
+        if not json:
+            return
+        self.__dict__ = json
