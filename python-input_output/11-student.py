@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""
-a class Student that defines a student by: (based on 10-student.py)
+"""Module 11
+A class Student that defines a student by: (based on 10-student.py)
 """
 
 
