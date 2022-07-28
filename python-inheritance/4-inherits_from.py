@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-NO MODULES USED 
+NO MODULES USED
 """
 
 
