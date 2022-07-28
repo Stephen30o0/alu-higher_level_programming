@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+NO MODULES USED
+"""
+
+
 def inherits_from(obj, a_class):
     """checks if obj is an instance of subclass of a_class
     Args:
