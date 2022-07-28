@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+A Module
+"""
+
+
 class BaseGeometry:
     """creates a class BaseGeometry"""
     def area(self):
