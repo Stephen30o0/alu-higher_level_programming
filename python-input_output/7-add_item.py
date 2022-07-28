@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Loads adds and saves arguments in python list
+adds all arguments to a Python list, and then save them to a file
 """
 import sys
 
@@ -13,4 +13,4 @@ try:
     l = load_from_json_file("add_item.json")
 except ValueError:
     l = []
-save_to_json_file(l + sys.argv[1:], "add_item.json"))
+save_to_json_file(l + sys.argv[1:], "add_item.json")
