@@ -37,11 +37,17 @@ using ``add_integer``
     TypeError: add_integer() missing 1 required positional argument: 'a'
 
     >>> add_integer(1, float('inf'))
-	Traceback (most recent call last):
-	...
-	OverflowError: cannot convert float infinity to integer
+    Traceback (most recent call last):
+        File "C:\Users\cococe ltd\PycharmProjects\alu-higher_level_programming\python-test_driven_development\0-add_integer.py", line 27, in <module>
+            print(add_integer(1, float("inf")))
+        File "C:\Users\cococe ltd\PycharmProjects\alu-higher_level_programming\python-test_driven_development\0-add_integer.py", line 24, in add_integer
+            b = int(b)
+    OverflowError: cannot convert float infinity to integer
 
     >>> add_integer(1, float('nan'))
 	Traceback (most recent call last):
-	...
-	ValueError: cannot convert float NaN to integer
+        File "C:\Users\cococe ltd\PycharmProjects\alu-higher_level_programming\python-test_driven_development\0-add_integer.py", line 27, in <module>
+            print(add_integer(1, float("nan")))
+        File "C:\Users\cococe ltd\PycharmProjects\alu-higher_level_programming\python-test_driven_development\0-add_integer.py", line 24, in add_integer
+            b = int(b)
+    ValueError: cannot convert float NaN to integer
