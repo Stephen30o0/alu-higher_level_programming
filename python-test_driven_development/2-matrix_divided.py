@@ -5,15 +5,16 @@ Divides all elements of a matrix
 
 
 def matrix_divided(matrix, div):
-    """divides all elements of a matrix :param matrix: list of lists of integers or floats :type matrix:
-    list of list of int or float :param div: divisor :type div: int or float
+    """
+    divides all elements of a matrix
     Params:
         matrix – list of lists of integers or floats
         div – divisor
     Returns:
         a new matrix containing the quotients
     Raises:
-        TypeError – if matrix elements are neither int nor float, if matrix rows are not the same size
+        TypeError – if matrix elements are neither int nor float,
+         if matrix rows are not the same size
         ZeroDivisionError – if dividing by zero
     """
     new = []
@@ -32,7 +33,8 @@ def matrix_divided(matrix, div):
                             "of integers/floats")
         row = []
         for c in range(len(matrix[i])):
-            if type(matrix[i][c]) is not int and type(matrix[i][c]) is not float:
+            if type(matrix[i][c]) is not int \
+                    and type(matrix[i][c]) is not float:
                 raise TypeError("matrix must be a matrix (list of lists) " +
                                 "of integers/floats")
             if len(matrix[0]) != len(matrix[i]):
