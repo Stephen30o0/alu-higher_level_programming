@@ -40,7 +40,7 @@ using ``add_integer``
     Traceback (most recent call last):
     TypeError: a must be an integer
 
-    >>> add_integer(2,"Hello")
+    >>> add_integer(3,"Hello")
     Traceback (most recent call last):
     TypeError: b must be an integer
 
@@ -48,10 +48,10 @@ using ``add_integer``
     Traceback (most recent call last):
     TypeError: a must be an integer
 
-    >>> add_integer(float('nan'))
+     >>> add_integer("Bad", "Blood")
     Traceback (most recent call last):
     TypeError: a must be an integer
 
-    >>> add_integer(98, float('nan'))
+    >>> add_integer(float('nan'))
     Traceback (most recent call last):
-    TypeError: b must be an integer
+    ValueError: cannot convert float NaN to integer
