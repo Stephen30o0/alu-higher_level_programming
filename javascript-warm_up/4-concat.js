@@ -1,3 +1,3 @@
 #!/usr/bin/node
 const args = process.argv;
-console.log(`${args[0]} is ${args[1]}`)
+console.log(`${args[2]} is ${args[3]}`);
