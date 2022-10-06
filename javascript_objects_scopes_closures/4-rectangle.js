@@ -10,14 +10,14 @@ module.exports = class Rectangle {
   }
 
   print () {
-    let y = 'X';
+    const y = 'X';
     for (let i = 0; i < this.height; i++) {
       console.log(y.repeat(this.width));
     }
   }
 
   rotate () {
-    let i = this.width;
+    const i = this.width;
     this.width = this.height;
     this.height = i;
   }
