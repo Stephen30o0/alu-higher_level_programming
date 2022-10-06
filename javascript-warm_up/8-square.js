@@ -3,9 +3,9 @@ let output;
 const args = process.argv;
 const conV = Number(args[2]);
 if (conV) {
-  for (let i = 0; i < conV; i++) {
+  for (let a = 0; a < conV; a++) {
     output = '';
-    for (let j = 0; j < conV; j++) {
+    for (let b = 0; b < conV; b++) {
       output += 'X';
     }
     console.log(output);
